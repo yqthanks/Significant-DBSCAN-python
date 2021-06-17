@@ -39,10 +39,12 @@ The following figure shows an example of results comparing DBSCAN and significan
 
 ## Usage
 [demo.py](https://github.com/yqthanks/significantDBSCAN-python/blob/master/demo.py) includes a demo on how to run Significant DBSCAN.
+
 [SignificantDBSCAN_share.ipynb](https://github.com/yqthanks/significantDBSCAN-python/blob/master/SignificantDBSCAN_share.ipynb) has everything together in one notebook.
 
 ## Data
 Example datasets are given in the sample_data/demo folder.
+
 More datasets and scripts for synthetic data generation are provided in the eariler [matlab-version's repo](https://github.com/yqthanks/Significant-DBSCAN-matlab/tree/master/synthetic_data)
 
 ## Example comparison with other clustering techniques
