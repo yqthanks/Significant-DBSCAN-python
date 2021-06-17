@@ -1,4 +1,4 @@
-# Significant DBSCAN
+# Significant DBSCAN (Python version)
 (This is the new **Python** version for data with arbitrary dimensions; previous [matlab version](https://github.com/yqthanks/Significant-DBSCAN-matlab) is optimized for 2D spatial data)
 
 **Code for paper** ([Best Paper Award](http://sstd2019.org/program.html) @ SSTD 2019):
