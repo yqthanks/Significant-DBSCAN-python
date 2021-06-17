@@ -123,17 +123,26 @@ def SigDBSCAN(X, eps_range, density_range, m=100, sig_level=0.01, h=10,
     Paratemers
     -----------
     X: Input data. Feature values should be in range [0,1]
+
     eps_range: Minimum and maximum eps to consider (X feature value range is in [0,1], so this number needs to be in [0,1])
+
     density_range: SigDBSCAN enumerates through a list of densities estimated from X.
         This range means the max and min relative density to consider. For example, denote D as the distribution of densities around all points for a given eps,
         a [min, max] = [0.5, 0.9] means CDF(D, min_density) = 0.5, and the max is CDF(D, max_density) = 0.9. CDF is cumulative probability function.
+
     m: Number of simulation trials, e.g., 19, 99, 999
+
     sig_level: Significance level, e.g., 0.05, 0.01
+
     h: number of bins for frequency calculation
+
     num_eps: number of eps to consider in the eps range
+
     num_density: number of densities to consider in the density range
+
     sample_portion: proprtion of data points to use to estimate density distribution (default to 1).
         This is used for both single dimension (for H0 data generation) and all dimensions (used to estimate min and max density for density range)
+
     increase_thrd: When deciding whether to move to the a larger eps or a lower density
         (choosing (eps, minpts) in a heuristic manner; happens before each significance testing).
         Illustration all candidates for default num_eps = 5 and num_density = 5: (the current search only moves to larger eps or lower density;

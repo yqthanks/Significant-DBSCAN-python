@@ -33,6 +33,7 @@ density_range = np.array([0.25, 0.75])#min & max density (percentile in overall 
 #see SigDNSCAN.py for parameter definitions
 #not recomending increasing number_density by too much, otherwise may introduce multi-testing issue;
 #if large num_density is used, to avoid/mitigate the potential multi-testing issue, uncomment the "break" in SigDBSCAN() to terminate the search if no significant cluster is found at a density level
+#change print_option to 0 to hide intermediate prints
 y = SigDBSCAN(X, eps_range, density_range, m=100, sig_level=0.01, h=10,
               num_eps = 5, num_density = 5, sample_portion = 1,
               increase_thrd = 0.1, complete_random = 2, print_option = 1)

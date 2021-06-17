@@ -16,16 +16,26 @@ def estimate_density(X, h, complete_random = 2):
     """Estimate frequency distribution along each dimension.
     Assuming dimensions are independent. Preprocessing (e.g., dimension reduction)
     are recommended for data containing correlated dimensions.
+    Note: Users can define their own null frequency distribution by customizing this function.
 
     Paratemers
     -----------
     X: Input data. Feature values should be in range [0,1]
+
     h: number of bins for frequency calculation
+
+    complete_random: determines the null distribution for each dimension.
+        If 1, then H0 data points are completely random in each dimension (e.g., h bins receive equal probability).
+        If 0, then probability distribution is estimated using input data X (this might be better for higher dimensions, where data are sparse).
+        If 2, then probability distribution is a weighted average of the above two scenarios (weights are defaulted to [0.5, 0.5] and can be changed in estimate_density() function)
+        Users can define their own null distribution (using estimate_density() function).
+        The null distribution affects the significance of clusters.
 
     Returns
     -------
     dist_d: Numpy array. Distribution (freq.) of data points along each dimension
-    (distribution along each dimension is represented as a vector with h bins).
+    (distribution along each of the d dimensions is represented as a vector with h bins).
+    Size: d x h, can be user-defined
     """
 
     n, d = X.shape#number of points and dimensions
@@ -84,13 +94,21 @@ def monte_carlo_estimation(n, dist_d, m, sig_level, eps, minpts, h=10, best_obs_
     Paratemers
     -----------
     X: Input data. Feature values should be in range [0,1]
+
     h: number of bins for frequency calculation
+
     dist_d: Numpy array. Distribution (freq.) of data points along each dimension (distribution along each dimension is represented as a vector with h bins). Example: [[0.4, 0.6], [0.1, 0.9]]
+
     m: Number of simulation trials, e.g., 19, 99, 999
+
     sig_level: Significance level, e.g., 0.05, 0.01
+
     eps: eps for DBSCAN (must be the same for observed data)
+
     minpts: minpts for DBSCAN (must be the same for observed data)
+
     best_obs_cluster: size of the largest cluster detected from observed data; if a value is provided, will be used to enable early-termination
+
     print_freq: how often does the function print about the trial id being executed (help user to estimate time left)
     """
 
