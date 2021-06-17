@@ -38,9 +38,9 @@ The following figure shows an example of results comparing DBSCAN and significan
 <img src="https://github.com/yqthanks/significantDBSCAN/blob/master/example_results.png" width="600">
 
 ## Usage
-[demo.py](https://github.com/yqthanks/significantDBSCAN-python/blob/master/demo.py) includes a demo on how to run Significant DBSCAN.
+[demo.py](https://github.com/yqthanks/Significant-DBSCAN-python/blob/main/demo.py) includes a demo on how to run Significant DBSCAN.
 
-[SignificantDBSCAN_share.ipynb](https://github.com/yqthanks/significantDBSCAN-python/blob/master/SignificantDBSCAN_share.ipynb) has everything together in one notebook.
+[SignificantDBSCAN_share.ipynb](https://github.com/yqthanks/Significant-DBSCAN-python/blob/main/SignificantDBSCAN_share.ipynb) has everything together in one notebook.
 
 ## Data
 Example datasets are given in the sample_data/demo folder.
