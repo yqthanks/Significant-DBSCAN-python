@@ -15,7 +15,7 @@
 }
 ```
 
-We appreciate citing of this paper if the code/data is used for result comparison, etc. More versions (python version added)/data will be added soon.
+We appreciate citing of this paper if the code/data is used for result comparison, etc.
 
 Another related survey on statistically-robust clustering is available at [arXiv](https://arxiv.org/pdf/2103.12019.pdf):
 
