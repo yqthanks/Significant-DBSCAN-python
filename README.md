@@ -15,13 +15,9 @@
 }
 ```
 
-We appreciate citing of this paper if the code/data is used for result comparison, etc.
-
 A recent survey on statistically-robust clustering: 
 
-Xie, Y., Shekhar, S. and Li, Y., 2022. Statistically-robust clustering techniques for mapping spatial hotspots: A survey. ACM Computing Surveys (CSUR), 55(2), pp.1-38. ([Published](https://dl.acm.org/doi/pdf/10.1145/3487893); [arXiv preprint](https://arxiv.org/pdf/2103.12019.pdf))
-
-**Sharing code to support reproducible research.**
+Xie, Y., Shekhar, S. and Li, Y., 2022. Statistically-robust clustering techniques for mapping spatial hotspots: A survey. ACM Computing Surveys (CSUR), 55(2), pp.1-38. ([Published version](https://dl.acm.org/doi/pdf/10.1145/3487893); [arXiv preprint](https://arxiv.org/pdf/2103.12019.pdf))
 
 ## Description
 This work aims to address a major limitation of traditional density-based clustering approach -- the lack of statistical rigor. This makes approaches such as DBSCAN tend to return many spurious clusters. For example, according to the [HDBSCAN](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14) paper: 
